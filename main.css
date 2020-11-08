@@ -1,0 +1,2197 @@
+
+
+@keyframes load {
+    
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+
+
+body{
+    margin: 0px;
+    background-color: rgb(14, 12, 12);
+    animation: load 1s ease-in-out 1;
+    
+}
+
+
+
+:root{
+    --light-grey-color : rgb(147, 168, 179);
+}
+
+@keyframes scale{
+    from{
+        height:inherit;
+        width: inherit;
+    }
+    to{
+        height: 50vh;
+        width: 50vh;
+    }
+}
+
+@keyframes popup{
+
+    0%{
+        transform: translateZ(0);
+    }
+
+    100%{
+        transform: translateZ(2%);
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+    *{
+        font-size:12px ;
+    }
+}
+
+
+
+
+
+
+/********common classes*******/
+
+.round{
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:active{
+    color: inherit;
+}
+/*** a cotainer for all horizantal row***/
+.row-flex-container{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/***SECTION HEADER****/
+h1.section-header{
+
+    display: block;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* text-shadow: 2px 2px 4px white; */
+    margin: 0.5rem 8px 2px 0px;
+
+}
+
+
+/************ Page Header **********/
+.page-header{
+    
+    display: block;
+    position: fixed;
+    /* border: solid 2px black; */
+    background-color:black;
+    height: 12vh;
+    width: 95vw;
+    margin : 0px auto;
+    padding: 4px 24px;
+    margin-right: 0px;
+    color: white;
+    box-shadow: 0px 10px 20px black;
+    z-index: 10;
+}
+
+#page-header{
+    margin-right: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.right-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+/***page logo**/
+
+
+/*******  logo  *******/
+.logo-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url(logo.png);
+    background-size: contain;
+    
+}
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    
+}
+
+.emoji {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid rgba(233, 245, 2, 0.44);
+    background-image: linear-gradient(to top right, rgb(255, 247, 0), rgb(255, 238, 0));
+    
+    position: absolute;
+    margin: auto;
+    left: 12.3px;
+    top:12.3px;
+}
+
+.glasses1 {
+    width: 8px;
+    height: 6px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    position: absolute;
+    top: 40%;
+    left: 16px;
+}
+
+.glasses2 {
+    width: 8px;
+    height: 6px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    position: absolute;
+    top: 40%;
+    left: 28px;
+}
+
+.stick {
+    /*    margin: 4px;*/
+    width: 8px;
+    height: 2px;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    position: absolute;
+    top: 40%;
+    left: 21px;
+}
+
+.music-icon i {
+    color: rgb(104, 0, 250);
+    box-sizing: content-box;
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+
+#page-name{
+    display: flex;
+    flex-direction: column ;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+#page-name p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+/** favourite **/
+
+
+#Favourites{
+    font-size: 1rem;
+    margin-left: 15%;
+    font-family: sans-serif;
+}
+
+
+/**bell icon**/
+
+.notification-icon{
+    font-size: 1.2rem;
+    margin: 0px 40px;
+}
+
+/**user profil photo **/
+
+.profile-photo{
+
+    display: inline-block;
+    height: 45px;
+    cursor: pointer;
+    background-image: url(trash_media/god.png);
+    width: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid white;
+
+}
+
+
+/***search bar ***/
+
+.search{
+    position: relative;
+    padding: 0.5rem;
+    background-color: inherit;
+    border: 0px;
+    width: 200px;
+    
+}
+
+
+.search-bar i{
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(147, 168, 179);
+}
+
+.search-bar{
+    z-index: 10;
+    top:20%;
+    align-items: center;
+    display: flex;
+    padding: 0px 4px;
+    right: 20%;
+    /* border: 1px black solid; */
+    border-radius: 5%;
+}
+
+.search-bar:focus{
+    border: 0px;
+}
+
+.search-bar div{
+    display: inline-block;
+    height: 100%;
+
+}
+
+/**header ddrop down**/
+
+input.nav-drop-down{ /**the checkbox which guides each drop down elemnt **/
+    display: none;
+}
+
+.nav-drop-down-container{
+    position: absolute;
+    right: 0rem;
+    top:9vh;
+
+}
+
+  
+.nav-drop-down-menu{
+    /* clear: none; */
+ opacity: 0;
+  max-height: 0;
+  /* display: none; */
+  transition: max-height 1s ease-in-out;
+  z-index: 0;
+  width:100vw;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top:0.8rem;
+  background-color:rgb(20, 27, 65);
+  padding: 0px 4px;
+  transition: all 1s ease-in-out;
+}
+
+.nav-drop-down-menu ul{
+    display: none;
+}
+
+.nav-drop-down-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+    display: block;
+    overflow: hidden;
+    /* opacity: 0; */
+
+}
+.nav-drop-down-menu ul{
+    display: none;
+}
+.nav-drop-down-menu ul li {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    color:  white;
+    margin:0.5rem 0 0.5rem 0;
+    font-size: 15px;
+    z-index: 0;
+}
+
+.nav-drop-down-menu ul li :hover{
+  color: rgb(101, 115, 184);
+  cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+
+    .nav-drop-down:checked ~ .nav-drop-down-menu{
+        max-height: 40vh;
+        opacity: 1;
+     
+        z-index: 2;
+    }
+
+    .nav-drop-down:checked ~ .nav-drop-down-menu ul{
+      display: block;
+    }
+
+
+}
+
+
+
+.nav-drop-down-menu i{
+    margin : 0 10px 0px 10px
+}
+
+
+/*header media queies*/
+
+@media screen and (max-width:700px){
+
+    .left-align{
+        
+        width: 10%;
+     height: 100%;
+    }
+    .notification-icon{
+        font-size: 1.2rem;
+        margin: 0px 10px;
+    }
+    #Favourites{
+       display: none;
+    }
+    .right-align{
+        align-self: flex-end;
+    }
+    .nav-bar{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:550px){
+    .search{
+        width:20vw;
+    }
+    .profile-photo{
+
+        
+        height: 30px;
+       
+        width: 30px;
+        margin-right: 10px;
+    
+    }
+}
+/*********** MAIN SECTION ***********/
+.main{
+
+    z-index: 1;
+    display: flex;
+    /* border: solid 2px black; */
+    position: relative;
+    top:18vh ;
+    display: flex;
+    margin: 0px 5% 15vh 5%;
+    
+    padding: 4px;
+
+}
+
+/****************** main player section **************/
+
+.main-section{
+    margin: 2px;
+    padding: 2px;
+    display: inline-block;
+    /* border: solid 2px black; */
+   display: flex;
+   flex-direction: column;
+    width: 70%;
+}
+
+@media screen and (max-width:700px){
+    .main-section{
+        width: 100%;
+    }
+}
+
+
+/****** carosel ******/
+
+.carosel{
+   
+    display: block;
+    
+    /* flex-direction: row; */
+    position: relative;
+   
+    align-items: center;
+    /* height: 25vw; */
+    /* border: solid 2px rgb(124, 124, 124); */
+    width: 100%;  
+    margin-top:20px ;  
+    
+   
+}
+
+input[type=radio].slider_buttons{
+    display: none;
+}
+
+#slider{
+
+    height: 23vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+
+#slider  label{
+
+    margin: auto;
+
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out ;
+    
+}
+
+#slide1,#slide2,#slide3, #slide4, #slide5{
+
+    background-color: black;
+
+}
+
+/* poistion of checkked image */
+
+#s1:checked ~ #slide1 , #s2:checked ~ #slide2 , #s3:checked ~ #slide3 , 
+#s4:checked ~ #slide4 , #s5:checked ~ #slide5 {
+
+    box-shadow: 0px 13px 25px 0px rgba(0,0,0,0.3), 0px 11px 7px 0px rgba(0,0,0,0.19);
+    transform: translate3d(0,0,0);
+}
+
+/* position of my right image when mine is checke */
+#s1:checked ~ #slide2 , #s2:checked ~ #slide3 , #s3:checked ~ #slide4 , 
+#s4:checked ~ #slide5 , #s5:checked ~ #slide1 {
+
+    box-shadow: 0 6px 10px 0px rgba(0,0,0,0.3), 0 2px 2px 0px rgba(0,0,0,0.2);
+    transform: translate3d(20%,0,-100px);
+}
+
+/* position of my left image when mine is checke */
+
+
+#s1:checked ~ #slide5 , #s2:checked ~ #slide1, #s3:checked ~ #slide2 , 
+#s4:checked ~ #slide3 , #s5:checked ~ #slide4 {
+
+    box-shadow: 0 6px 10px 0px rgba(0,0,0,0.3), 0 2px 2px 0px rgba(0,0,0,0.2);
+    transform: translate3d(-20%,0,-100px);
+}
+
+/* position of my  second left image when mine is checked */
+
+#s1:checked ~ #slide3 , #s2:checked ~ #slide4, #s3:checked ~ #slide5 , 
+#s4:checked ~ #slide1 , #s5:checked ~ #slide2 {
+
+
+    box-shadow:  0 1px 4px 0px rgba(0,0,0,0.4);
+    transform: translate3d(-40%,0,-200px);
+}
+
+/* position of my  second right image when mine is checked */
+#s1:checked ~ #slide4 , #s2:checked ~ #slide5, #s3:checked ~ #slide1 , 
+#s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+
+    box-shadow:  0 1px 4px 0px rgba(0,0,0,0.4);
+    transform: translate3d(40%,0,-200px);
+}
+
+
+
+/***media qr carousel***/
+@media screen and (max-width:700px){
+        #slider{
+            height:35vw;
+        }
+}
+
+
+
+
+/***************************** latest releases *************************/
+
+.latest-releases{
+    display: block;
+   
+    /* border: solid 2px purple; */
+    width: 100%;
+    margin : 14px 0;
+
+}
+
+/******* Wrapper/Containers for latest music  cards*******/
+
+.latest-released-card-wrapper{
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/***** MUSIC CARDS ****/
+.latest-released-card{ /**this is for indiviual music cards present in this section**/
+
+    height: 120px;
+    margin: 10px 20px 10px 0px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 2px tomato ; */
+    position: relative;
+
+}
+
+
+/****Latetest Release Details****/
+
+/****************************/
+
+
+.recent-data{ /**this is the conatiner for the date which we want in each card element**/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* border: hotpink 2px solid; */
+}
+
+.latest-song-picture{
+    height: 100px;
+    width: 100px;
+    /* border: hotpink 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-shadow: 0px 30px 30px 2rem black;
+    /* color:rgb(182, 182, 208) ; */
+
+    color: whitesmoke;
+  
+
+}
+
+
+.latest-song-picture i{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out ;
+}
+
+.latest-song-picture:hover {
+    
+    opacity: 0.95;
+    /* opacity: 0.5; */
+    box-shadow: inset 100px 100px 10px 10px rgba(0, 0, 0, 0.426) ;
+  
+}
+
+.latest-song-picture:hover i{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.relased-song-data{ /**this coreespond to the container which has the text part of the music crad **/
+    height: 70%;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.song-name-duration{
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration{
+    font-size: 0.5rem;
+}
+
+.relased-song-data h3{ /** song name **/
+    margin: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.relased-song-data h4{ /** artitst **/
+    margin: 0;
+    color: rgb(182, 182, 208);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+
+.relased-song-data p{/**release date **/
+    margin: 0;
+    font-size: 0.7rem;
+    color: rgb(216, 216, 216);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#latest-release-1{
+    background-image: url(https://image.simplecastcdn.com/images/c44db111-b60d-436e-ab63-38c7c3402406/367d2e94-5d6b-4efe-bde6-a14687250e56/3000x3000/1471485029-artwork.jpg?aid=rss_feed);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#latest-release-2{
+    background-image: url(https://image.simplecastcdn.com/images/c44db111-b60d-436e-ab63-38c7c3402406/367d2e94-5d6b-4efe-bde6-a14687250e56/3000x3000/1471485029-artwork.jpg?aid=rss_feed);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#latest-release-3{
+    background-image: url("https://frontendhappyhour.com/public/img/front-end-happy-hour.svg?v2");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#latest-release-4{
+    background-image:url("https://syntax.fm/static/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** dotted drop down ***/
+input.check-drop-down{ /**the checkbox which guides each drop down elemnt **/
+    display: none;
+}
+
+.drop-down-container{
+    position: absolute;
+    right: 0rem;
+    top:0rem
+
+}
+
+.dots-button{
+    position: absolute;
+    top:-0.5rem;
+    right: 0;
+    /* z-index: -1; */
+}
+
+.dots:after {
+    cursor: pointer;
+    color: white;
+    content: '...';
+    font-size: 20px;
+    padding: 0 5px;
+  }
+  
+.drop-down-menu{
+  opacity: 0;
+  display: none;
+  transform: opacity 0.5s;
+  height: 100px;
+  width:150px;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top:0.8rem;
+  background-color: white;
+  padding: 0px 4px;
+  transition: all 1s ease-in-out;
+}
+
+.drop-down-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+    display: block;
+    overflow: hidden;
+    /* opacity: 0; */
+
+}
+.drop-down-menu ul li {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    color:   rgb(12, 16, 39);
+    margin:0.5rem 0 0.5rem 0;
+}
+
+.drop-down-menu ul li :hover{
+  color: rgb(101, 115, 184);
+  cursor: pointer;
+}
+
+.check-drop-down:checked ~ .drop-down-menu{
+    opacity: 1;
+    display: inline-block;
+}
+
+.drop-down-menu i{
+    margin : 0 10px 0px 10px
+}
+
+
+@media screen and (max-width:550px){
+    .latest-released-card{
+        width:100%;
+    }
+    .recent-data{
+        width: 100%;
+    }
+}
+
+/****popular artist****/
+
+.popular-artist{
+
+    display: flex;
+    flex-direction: column;
+    padding: 4px ;
+    /* border: solid 2px purple; */
+    width: 100%;
+    /* margin : 2px 0; */
+    position: relative;
+    margin : 14px 0;
+   
+}
+
+.popular-artist-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 2px white solid; */
+    width:9vw ;
+
+    
+}
+
+.popular-artist-img{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-shadow: 0px 30px 30px 2rem black;
+    /* color:rgb(182, 182, 208) ; */
+
+    color: whitesmoke;
+    
+}
+
+.popular-artist-img{
+    height: 9vw;
+    width: 9vw;
+    display: flex;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-shadow: 0px 30px 30px 2rem black;
+    /* color:rgb(182, 182, 208) ; */
+
+    color: whitesmoke;
+    
+}
+
+
+.popular-artist-img i{
+    
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.popular-artist-img:hover i{
+    opacity: 1;
+    /* box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 1); */
+}
+
+.popular-artist-content p{
+    color: rgb(182, 182, 208);
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+#popular-artist-1-img{
+    background-image: url(https://img-a.udemycdn.com/user/200_H/599932_71aa_5.jpg?FS8IPgtpwDQ-_f3QbmkYUP-kY605rg8CYzXfAJEI3rEFnVxKY4taDyDIMG29MivQtPol-ch6umuZeNdFDhasEvb2vZwkKRnoEHAOBapNPE1bXgP4QMtoRblARQ);
+    background-position: center;
+   
+}
+#popular-artist-2-img{
+    background-image: url(https://img-b.udemycdn.com/user/200_H/422607_77b6_10.jpg?secure=mB4onXWVguDpMzf8LlHeZA%3D%3D%2C1604913823);
+    background-position: center;
+  
+}
+
+#popular-artist-3-img{
+    background-image: url(https://img-a.udemycdn.com/user/200_H/31334738_a13c_2.jpg?qFjz-FHjBOXheIg3big1HoBnjIQ16se1hsI2zr9K49_S8i66h8pmEAvqi_66VdCotMq4Tpz1CsIbIgDnmX9Wk1zTu4RURwNUtx8XWexZCy_aNLza8Re1MyB3RQQZ);
+    background-position: center;
+  
+}
+
+#popular-artist-4-img{
+    background-image: url(https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg);
+    background-position: center;
+  
+}
+
+#popular-artist-5-img{
+    background-image: url(https://yt3.ggpht.com/a/AATXAJybqBePfae6bJxd4kIMDKVaDlvfwwLMkLlX_xrO=s176-c-k-c0x00ffffff-no-rj-mo);
+    background-position: center;
+  
+}
+
+#popular-artist-6-img{
+    background-image: url(https://yt3.ggpht.com/a/AATXAJyxouge7pSlnaEusQnRFNbBG3YtpUUHdR-SOoSsig=s176-c-k-c0x00ffffff-no-rj-mo);
+    background-position: center;
+  
+}
+
+
+
+@media screen and (max-width:830px){
+    #popular-artist-6{
+        display: none;
+    }
+    .popular-artist-img{
+        min-width: 75px;
+        min-height: 75px;
+    }
+    .popular-artist-content{
+        width: 18%;
+    }
+}
+
+
+
+/************ Music Stations   *********/
+
+.music-stations{
+    box-sizing: border-box;
+    display: flex;
+    /* border: solid 2px purple; */
+    background-color:   rgb(16, 22, 66);
+    width: 100%;
+   
+    padding:10px ;
+    position: relative;
+    margin : 20px 0;
+   
+}
+
+/***music stations logo***/
+
+.station-logo{
+    
+    height :8vw;
+    width:12vw;
+    /* border: 2px solid white; */
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+
+  
+}
+
+.station-logo >div{
+    position: absolute;
+ 
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#stations-logo-1{
+
+    height:inherit;
+    width: 8vw;
+    transform:translate3d(-10px,0px,-250px);
+    background-color:rgb(237, 177, 25);
+}
+
+#stations-logo-2{
+    height: inherit;
+    width: 8vw;
+    transform: translate3d(6px,0,-150px);
+    background-color: yellow;
+}
+#stations-logo-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:inherit;
+    width: 8vw;
+    transform: translate3d(25px,0,0);
+    background-color:rgb(255, 77, 0);
+    z-index: 2;
+}
+#stations-logo-4{
+    height:inherit;
+    width: 8vw;
+    transform: translate3d(42px,0,-150px);
+    background-color: yellow;
+}
+#stations-logo-5{
+    height: inherit;
+    width: 8vw;
+    transform: translate3d(58px,0,-250px);
+    background-color:rgb(237, 177, 25);
+}
+
+/**LOGOS LABEL**/
+.station-label{
+    position: absolute;
+    top:60%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+/**logo music stations**/
+.logo2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+  background-color: white;
+    
+}
+
+.emoji2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid  rgb(255, 77, 0);
+    background-color: rgb(255, 77, 0);
+    
+    position: absolute;
+    margin: auto;
+    left: 14px;
+    top:14px;
+}
+
+.glasses1_2 {
+    width: 8px;
+    height: 6px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+  background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 18px;
+}
+
+.glasses2_2 {
+    width: 8px;
+    height: 6px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    background-color: white;   
+    position: absolute;
+    top: 40%;
+    left: 34px;
+}
+
+.stick2 {
+    /*    margin: 4px;*/
+    width: 14px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 23px;
+}
+
+
+#icon2-music-icon i{
+    left:40px;
+    font-size: 1.5rem;
+    color:rgb(237, 177, 25);
+}
+
+/*******logoend**/
+
+/****** Music station list *****/
+.music-station-content{
+    height: 7vw;
+    width: 7vw;
+    /* border: white solid 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+}
+
+
+
+.station-list{
+    width: 80%;
+    scroll-behavior: auto;
+    
+    color: white;
+    flex-wrap: wrap;
+}
+
+#music-station-1{
+    background-image: url(https://pbs.twimg.com/profile_images/1304985167476523008/QNHrwL2q.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#music-station-2{
+    background-image: url(https://media.glassdoor.com/sqll/1122623/tutorials-point-squarelogo-1504253646152.png);
+    background-size: cover;
+    background-position: center ;
+}
+#music-station-3{
+    background-image: url(https://turbologo.com/articles/wp-content/uploads/2019/10/youtube-logo-illustration-1280x720.jpg);
+    background-size: cover;
+    background-position: center ;
+}
+#music-station-4{
+    background-image: url(https://mergerlinks-production.s3.eu-west-2.amazonaws.com/files/company/65972/logo/UNACADEMY.png);
+    background-size: cover;
+    background-position: center ;
+
+}
+#music-station-5{
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-position: center ;
+}
+#music-station-6{
+    background-image: url(https://lh3.googleusercontent.com/xM-xpo2304QX11xputm_cILYJCBshgGgYtVEP7q5HS9NFXNvQo6-BJHmi2lzEXC8dStqHHHn0TMT197IJJJ7St4bitI=s1080);
+    background-size: cover;
+    background-position: center ;
+}
+
+/***media quey for statiolist **/
+@media screen and (max-width:830px){
+ 
+    .music-station-content{
+            min-width: 65px;
+            min-height: 65px;
+    }
+        .station-list{
+            width: 100%;
+        }
+
+    .station-logo{
+        display: none;
+    }
+        
+    #stations-logo-1{
+
+        height:inherit;
+        display: none;
+        width: 0;
+        transform:translate3d(-10px,0px,-250px);
+        background-color:rgb(237, 177, 25);
+    }
+
+    #stations-logo-2{
+        height: inherit;
+        width: 8vw;
+        transform: translate3d(6px,0,-150px);
+        background-color: yellow;
+        display: none;
+        width: 0;
+    }
+
+    #stations-logo-3{
+    display: none;
+    width: 0;
+    }
+
+
+    #stations-logo-4{
+        height:inherit;
+        width: 8vw;
+        transform: translate3d(42px,0,-150px);
+        background-color: yellow;
+        display: none;
+        width: 0;
+    }
+    #stations-logo-5{
+        height: inherit;
+        width: 8vw;
+        transform: translate3d(58px,0,-250px);
+        background-color:rgb(237, 177, 25);
+        display: none;
+        width: 0;
+    }
+
+    .logo2{
+        display: none;
+    }
+
+}
+
+@media screen and  (max-width:500px){
+    #music-station-6{
+        display: none;
+    }
+}
+
+@media screen and  (max-width:450px){
+    #music-station-5{
+        display: none;
+    }
+}
+
+
+/****************  Genres List   ***********/
+
+.genre-list-2{
+
+    display: flex;
+   
+    /* border: solid 2px purple; */
+    width: 100%;
+    margin : 2px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.genre-card{
+
+    height:130px;
+    margin: 2px 0px 2px 0px;
+    width :30%;
+    /* border: white 2px solid; */
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.genre-card img{
+    width:100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.165);
+}
+
+.genre-card:hover img{
+    transform:scale(1.4);
+    filter: saturate(1.5);
+}
+
+.genre-card:hover{
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.165);
+}
+
+
+#genre-1{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 3;
+    flex-shrink: 1;
+}
+
+#genre-2{
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 3;
+    flex-shrink: 1;
+}
+
+#genre-3{
+    position: absolute;
+    top:30%;
+    left:35%;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 3;
+    flex-shrink: 1;
+}
+
+
+
+/****************** Latest Released *******************/
+.latest{
+    display: flex;
+    flex-direction: column;
+    
+   
+    width: 100%;
+    margin : 18px 0px 0px 0px;
+}
+
+.latest-released-english{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 100px;
+  
+}
+
+.latest-released-image{
+  
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+.latest-realsed-content p{
+    margin: 4px 0px 4px 0px;
+    color:whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.song-name{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.release-date{
+    font-weight: 100;
+    font-size: 0.6rem;
+}
+#latest-english-1{
+    background-image: url(https://reactjs.org/logo-og.png);
+    background-size: cover;
+    background-position: center;
+}
+#latest-english-2{
+    background-image: url(https://www.freecodecamp.org/news/content/images/2020/04/Copy-of-Copy-of-Travel-Photography.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#latest-english-3{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAllBMVEX///9UxfgptvYBV5tBwfhLw/iw4vxfyvoAWp4Asfb4/f8AUZgvuPb1/P8itPbK7f5ozfql4Px20fsARZPD6v225v1vz/qu4/3v+v/Q7/4rvP0ubKcBS4UBTosBO2irwdmd2/sDZp49ap4ASosRYJMARIAAQHcQVoIAOWwQUnUAMFwAJEgALVEPTWwnaaYAR3qwxNuN1vq82e7UAAAC00lEQVR4nO3c23ISQRCA4Qy7HMIxaBJwBZJoEo1Ro+//coJhye5MD9V9NaP83zVVdP3VM7UXLGdnAAAAAAAAAAAAAAAAAAAAAAAAwP9j5vqii0nqyfIzK52k26dVgFZ6l7FWw9ST5Ye90ou2Yq8CnEE9WunRSo9WerTSo5UerfRopUcrPVrpXUVaXdAqQCu92BmkVYhWetEzmHqwDNFKj1Z6tNKjlR6t9GilRyu9WKvr1INlaEErtVgrzmCIM6jHGdSjlR6t9Gilp2k16cnmy2RjJxFr9a7xmWG/Kyovk42dxFzXSvzQqbWK/a6veQZpVRM3i72KEGrpWs2SjZxQUItWR3i1Wq0mtPK0aulaneB9VWvU8lqJqU54r3YOtdqtxmNaCfbP8a1Wy/F0KtU69Vb73fJbdTpCLVr9rRW2EmrRamdRCq2CWuWHZANmpfk4cGjl1aJVaDnuNIxpdUS71Vst7quQ36quxV6FwlavtWgVklrtanVpFZhMpVZb3FeC23MpVXX3KfVgWZoLtaq7z6OPqQfLUlhr26ooqCXya1X3D0VBrYh2rX2rXS3eSBE0a1X3j+t1XSv1YFlaHGpVX76u6ljslqzererp28tbLGrJXmtVT8+bx9WhFbUidrW2rb5vVkXT6Ce1BL3z6sfzZl14qCVavDwMBn4rakXcvA9TUSuGWhbUsqCWRbRWqn+TvEr0vSq57VZJLT2Xd61fWdVyudcaDSRp7i2Xe62cOGrpOWrpOWrp1b9S6aUe5F/gqKXnqKXnqKXnqKXnqKXnqKXnqKXnv8VArSMctfT8WK5cpB4pX0EsdisujMVuRQmxqBUjxXLlPPVYeRJjUUsWe8udWoKhHItaogm1DKhlQS0L7i2L6L8vUUsQrXWberIcUcuCWhbUsqCWBbUsqGVBLQtqWVDLglom1LKglgW1LKhlEav1O/VgWaKWBbUsrsVYJ13rD2ZcM4ecjqW5AAAAAElFTkSuQmCC);
+    background-size: cover;
+    background-position: center;
+}
+
+#latest-english-4{
+    background-image: url(data:image/png;base64,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);
+    background-size: cover;
+    background-position: center;
+}
+
+#latest-english-5{
+    background-image: url(https://cdn2.unrealengine.com/Unreal+Engine%2F11_18_UE_Feed_Migration_Images%2FFEED_THUMB_UE_Logo_Generic-1400x788-c11642ffb55e268095321f5eb144f469beb0074f.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#latest-english-6{
+    background-image: url(https://images.techhive.com/images/article/2015/12/swift-logo-100631523-large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1000px){
+    #latest-eng-6-wrapper{
+        display : none;
+    }
+    #latest-hin-6-wrapper{
+        display:none;
+    }
+}
+@media screen and (max-width:500px){
+    #latest-eng-6-wrapper{
+        display : inline-block;
+    }
+    #latest-hin-6-wrapper{
+        display:inline-block;
+    }
+}
+
+
+
+
+/************************ ASIDE QUEUE *********************/
+
+.aside-queue-section{
+
+    margin: 2px;
+    display: inline-block;
+    /* border: solid 2px black; */
+    height: 1050px;
+    position: relative;
+    width: 30%;
+}
+/******Aside HEader ******/
+.aside-section-header{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+
+}
+
+
+
+.aside-header{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 14px;
+}
+
+
+/***Drop Down ***/
+
+input.check-drop-down{ /**the checkbox which guides each drop down elemnt **/
+    display: none;
+}
+
+.drop-down-container-2{
+    position: relative;
+    right: 0rem;
+    top:0rem
+
+}
+
+.drop-down-menu-2{
+ 
+
+  display: none;
+ 
+  height: 0px;
+  width:0px;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top:0rem;
+  background-color: white;
+  margin-top:10px ;
+  padding: 0px 4px;
+  margin-right: -10px;
+  transition: all 1s ease-in-out 0.5s;
+  
+}
+
+.drop-down-menu-2 ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+   
+    display: block;
+    overflow: hidden;
+    /* opacity: 0; */
+
+}
+.drop-down-menu-2 ul li {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    color:   rgb(12, 16, 39);
+    margin:0.5rem 0 0.5rem 0;
+}
+
+.drop-down-menu-2 ul li :hover{
+  color: rgb(101, 115, 184);
+  cursor: pointer;
+}
+
+.check-drop-down:checked ~ .drop-down-menu-2{
+
+    opacity: 0;
+    transform: scaleX(500px);
+    opacity: 1;
+    height: 65px;
+    width: 150px;
+    display: inline-block;
+    z-index: 4;
+    right: 14px;
+    top:0.8rem;
+}
+
+.drop-down-menu-2 i{
+    margin : 0 10px 0px 10px;
+  
+}
+
+.drop-down-2-label{
+    display: flex;
+    color: rgb(16, 208, 208);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: 100px;
+    justify-content: space-between;
+    font-weight: 100;
+   
+}
+.drop-down-2-label i{
+    margin-top: 7px ;
+    font-size: 0.6rem;
+}
+
+/*****aside main music queue ****/
+
+.music-queue{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: 100%;
+    margin: 0;
+    
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+    
+    
+
+}
+
+.song-card-queue{
+    position: relative;
+
+    width: 90%;
+    height: 50px;
+    /* border: aqua 1px solid; */
+    display: flex;
+    margin-left: 10%;
+}
+
+
+ol.song-list{
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 8px;
+    position: relative;
+}
+
+ol.song-list li{
+    margin: 30px 0px;
+    list-style-type: none;
+    counter-increment: list;
+    position: relative;
+
+}
+
+/**numbered liist **/
+
+
+.song-card-queue::before{
+    display: flex;
+    height: 50px;
+    
+    width: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    content: counter(list) " ";
+    position: absolute;
+    text-align: right;
+    left: -20px;
+    
+}
+
+/**this pts zero befor thr forst nine**/
+
+.first-nine::before{
+    display: flex;
+    height: 50px;
+    
+    width: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    content:  "0"counter(list);
+    position: absolute;
+    text-align: right;
+    left: -20px;
+}
+
+
+/**contnet insde the  music card sin queu**/
+
+.song-cover-pic-queue{
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    /* border: 1px white solid; */
+    box-shadow: 0px 0px 20px 0px rgba(247, 247, 247, 0.556);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.song-cover-pic-queue img{
+    height: 50px;
+    
+    border-radius: 4px;
+    flex-shrink: 0;
+   
+}
+
+.song-details-queue{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    height: inherit;
+    width: 55%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 10px;
+}
+
+
+
+.song-queue-title{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+
+.song-queue-artist{
+    padding: 0;
+    margin-top: 1px;
+    margin: 0;
+    font-size: 0.7rem;
+    color:var(--light-grey-color);
+    font-weight: 100;
+}
+
+/**like button**/
+.like-wrapper{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* border: 1px solid powderblue; */
+ height: inherit;
+ width: 50px;
+ color: var(--light-grey-color);
+ 
+}
+
+/***aside media queies**/
+@media screen and (max-width:700px){
+    .aside-queue-section{
+        width:0;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .aside-queue-section:target{
+        width:100vw;
+        z-index: 2;
+        position: absolute;
+        background-color: rgb(12, 16, 39);
+    }
+   
+    
+}
+
+/******************************/
+
+
+.music-queue::-webkit-scrollbar {
+    width: 4px;
+    opacity: 0.5;
+}
+ 
+.music-queue::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.music-queue::-webkit-scrollbar-thumb {
+  background-color: rgb(16, 208, 208);;
+  /* outline: 1px solid rgb(16, 208, 208); */
+}
+
+/**media queries**/
+
+/********MUSIC PLAYER BBOTTOM*******/
+
+.music-player{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 100vw;
+    bottom: 0px;
+    /* background-color: #1E1E1E; */
+    background-color:rgb(14, 12, 12);
+    padding: 10px;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+.music-player-wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 90vw;
+    bottom: 0px;
+    background-color: rgb(14, 12, 12);
+    padding: 10px;
+    margin-right: 2%;
+
+    justify-content: space-between;
+}
+
+/****LEFT SIDE****/
+
+.song-info-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    /* border: 1px white solid; */
+    height: 100%;
+
+}
+
+.player-song-img{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    /* border: 1px white solid; */
+    display: flex;
+}
+
+.player-song-img img{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-song-info{
+
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    /* border: 1px white solid; */
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3.player-song-name{
+    margin:0;
+    padding: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+p.player-song-artist{
+
+        margin:0;
+        padding: 0;
+        color: var(--light-grey-color);
+        font-weight: 300;
+        font-size: 0.8rem;
+        font-weight: 100;
+}
+
+.left-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:20%;
+}
+
+.block-artist-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    height: 100%;
+    width: 50%;
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+
+.like-wrapper-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 50%;
+    height: 100%;
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+
+.like-wrapper-2:hover , .block-artist-wrapper:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+   color: rgb(174, 187, 194);
+}
+
+/*****CENTER CONTROLS****/
+
+/***central-control-buttons**/
+.player-contols-wrapper{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 1px white solid; */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.contol-buttons{
+    /* border: 1px pink solid; */
+    position: relative;
+    width: 50%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.contol-buttons {
+    color: var(--light-grey-color);
+}
+
+.contol-button:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+   color: rgb(174, 187, 194);
+}
+
+.player-control-shuffle{
+    font-size: 0.7rem;
+}
+
+.player-control-back{
+    font-size: 0.7rem;
+}
+
+.player-control-pause{
+    font-size: 1.8rem;
+
+}
+
+.player-control-forward{
+    font-size: 0.7rem;
+}
+
+.player-control-loop{
+    font-size: 0.7rem;
+
+}
+
+/** time stamp**/ 
+
+.time-bar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+    justify-content: space-between;
+  
+}
+.time-bar p{
+
+    color: var(--light-grey-color);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.outer-time-bar{
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height:0;
+    border: 1px var(--light-grey-color) solid;
+}
+
+.time-elapsed{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: center;
+    width: 60%;
+    height:0;
+  border-bottom: 2px;
+  border-color: cyan ;
+  border-style: solid;
+  border-top:2px ;
+  border-right: 0px;
+}
+
+.time-toggle{
+    display: inline-block;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    background:cyan ;
+    border-radius: 50%;
+    border: 4px cyan solid;
+}
+.time-toggle:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+/****RIGHT BUTONS ****/
+
+.extra-contol-buttons{
+       
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+   
+    height: 100%;
+    align-items: center;
+}
+
+.right-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 12%;
+    height: 100%;
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+.right-control:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+   color: rgb(174, 187, 194);
+}
+
+.volume-control{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.volume-control:hover{
+    cursor: pointer;
+}
+
+.volume-bar{
+    display:flex ;
+    width: 80%;
+    height: 0;
+    border-bottom: 1px solid  var(--light-grey-color);
+    border-top: 1px solid  var(--light-grey-color);
+    align-items: center;
+}
+.volume-level{
+    display:flex ;
+    width: 60%;
+    height: 0;
+    border-bottom: 1px solid cyan;
+    border-top: 1px solid  cyan;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.volume-toggle{
+    display: inline-block;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    width: 3px;
+    height: 3px;
+    background:cyan ;
+    border-radius: 50%;
+    border: 4px cyan solid;
+}
+.volume-toggle:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.expand{
+    align-self: flex-end;
+}
+
+#music-player{
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#music-player:target{
+   
+ opacity: 1;
+ z-index: 3;
+
+}
+
+.toggle{
+    position: fixed;
+    right:-20px;
+    bottom:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 12%;
+    height: 20px;
+    color: var(--light-grey-color);
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media screen and (max-width:750px){
+    .connect-device{
+        display: none;
+    }
+    
+    .contol-buttons{
+        /* border: 1px pink solid; */
+        position: relative;
+        width: 90%;
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    #pause i{
+        font-size: 20px;
+        overflow: visible;
+    }
+    .music-player-wrapper{
+        
+        width: 97vw;
+    
+    }
+    .lyrics{
+        display: none;
+    }
+    .left-buttons{
+        display: none;
+       
+    }
+    .playlist{
+        display:none;
+    }
+
+    .music-player{
+    
+        padding: 0;
+       
+    }
+    
+    .music-player-wrapper{
+      
+        padding: 0px;
+      
+    }
+    .song-info-wrapper{
+
+     
+        width: 30%;
+        /* border: 1px white solid; */
+       
+    
+    }
+  
+}
+
+@media screen and (max-width:900px){
+    #pause i{
+        font-size: 20px;
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width:500px){
+    .volume-bar{
+        display: none;
+    }
+    
+    .extra-contol-buttons{
+        width:10%;
+        margin-right: 10px;
+    }
+    .player-contols-wrapper{
+        width:60%;
+    }
+    .player-control-shuffle{
+        font-size: 15px;
+    }
+    
+    .player-control-back{
+        font-size: 15px;
+    }
+    
+    #pause i{
+        font-size: 35px;
+        overflow: visible;
+    }
+    
+    .player-control-forward{
+        font-size:15px;
+    }
+    
+    .player-control-loop{
+        font-size:15px;
+    
+    }
+    .music-player{
+       height: 120px;
+    }
+    
+    .music-player-wrapper{
+       height: 120px;
+    }
+    .player-song-info{
+        height: 100%;
+        width: 35%;
+    }
+    .player-song-img{
+        height: 100%;
+    }
+    .music-player-wrapper{
+        justify-content: flex-start;
+    }
+    .volume-control{
+        display: none;
+    }
+    #toggle{
+        align-self: flex-end;
+    }
+}
+

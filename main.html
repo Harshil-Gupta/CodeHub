@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>CODE HUB</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <meta name="viewport" content="Width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="main.css" type="text/css"> 
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta charset="UTF-8">
+        <meta name="description" content="Beginner FRiendly Site to learn programming">
+        <meta name="keywords" content="CODE, C++, JAVA , HTML">
+        <meta name="author" content="Samad Khan">
+
+
+    </head>
+
+    <body>
+
+        <header class="page-header" id="page-header">
+           <nav class="nav-bar">
+
+            <div class="left-align">
+                <div class="logo-wrapper">
+                  
+                </div>
+                 <div id="Favourites">
+                    <a href="#">MY PROGRESS</a>
+                </div>
+            </div>
+
+            <div class="right-align">
+                <div class="search-bar">
+                    <form action="POST">
+                        <div class="search-icons"> <i class="fas fa-search"></i></div>
+                    
+                        <input type="text" name="search" placeholder="Search Topics " class="search">
+                        <div class="search-icons"><i class="fas fa-microphone"></i></div>
+                    </form>
+                </div>
+
+                <i class="fas fa-bell notification-icon"></i>
+
+                <label for="nav-drop" class="">
+                <div class="profile-photo round">
+                </div>
+                </label>
+
+                <div class="nav-drop-down-container">
+
+
+                    <input type="checkbox" name="nav-drop" id="nav-drop" class="nav-drop-down">
+                    
+                    <!-- <label for="3-dots1" class="3dots-button"><div class="dots"></div></label> -->
+                    <div class="nav-drop-down-menu" id="nav-drop-down-menu">
+                        <ul>
+                            <li>
+                                <i class="fas fa-home"></i><a href="#">Home</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-bars"></i><a href="#aside-queue-section">Open Ranks</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-forward"></i><a href="#music-player">Open Podcast</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i><a href="#">Progress</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            
+
+          
+
+           </nav>
+        
+           <div class="music-player" id="music-player">
+                
+            <div class="music-player-wrapper">
+                <div class="song-info-wrapper">
+                    <div class="player-song-img">
+                        <img src="https://image.simplecastcdn.com/images/c44db111-b60d-436e-ab63-38c7c3402406/367d2e94-5d6b-4efe-bde6-a14687250e56/3000x3000/1471485029-artwork.jpg?aid=rss_feed" alt="cover">
+                    </div>
+                    <div class="player-song-info">
+                        <h3 class="player-song-name">
+                            Developer Tea
+                        </h3>
+                        <a href="https://developertea.simplecast.com/">
+                            <p class="player-song-artist">
+                                Interview Aaron Upright
+                            </p>
+                        </a>
+                    </div>
+                    <div class="left-buttons">
+                        <div class="like-wrapper-2">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="block-artist-wrapper">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="player-contols-wrapper"> 
+                    <div class="contol-buttons">
+
+                        <div class="player-control-shuffle contol-button">
+                            <i class="fas fa-random"></i>
+                        </div>
+
+                        <div class="player-control-back contol-button">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="player-control-pause contol-button" id="pause">
+                            <i class="far fa-pause-circle"></i>
+                        </div>
+
+                        <div class="player-control-forward contol-button">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="player-control-loop contol-button">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                    </div>
+                    <div class="time-bar">
+
+                        <p>1:60</p>
+                        <div class="outer-time-bar">
+                            <div class="time-elapsed">
+                                <div class="time-toggle">
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>3:00</p>
+                      
+                    </div>
+                </div>
+
+        
+
+                <div class="extra-contol-buttons">
+                    <div class="lyrics right-control">
+                        <i class="fas fa-closed-captioning"></i>
+                    </div>
+                    <div class="playlist  right-control">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="connect-device  right-control">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="volume-control">
+                        <div class="volume-button right-control">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="volume-bar">
+                            <div class="volume-level">
+                                <div class="volume-toggle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-control">
+                        <a href="#toggle"><i class="fas fa-chevron-down"></i></a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="toggle" id="toggle">
+            <a href="#music-player"> <i class="fas fa-chevron-up"></i></a>
+        </div>
+
+
+        </header>
+       
+        <main class="main">
+
+        <section class="main-section" id="main-section">
+
+            <div class="carosel" id="carosel">
+                <section id="slider">
+
+                    <input type="radio" name="slider" class="slider_buttons"  id="s1">
+                    <input type="radio" name="slider"   class="slider_buttons" id="s2">
+                    <input type="radio" name="slider"  class="slider_buttons"  id="s3" checked>
+                    <input type="radio" name="slider"   class="slider_buttons" id="s4">
+                    <input type="radio" name="slider"  class="slider_buttons" id="s5">
+        
+                    <label for="s1" id="slide1">
+                        <img src="https://s3.amazonaws.com/codechef_shared/download/small-banner/NOV20/1604308670.png" alt="image_1" height="100%" width="100%">
+                    </label>
+                    <label for="s2" id="slide2">
+                        <img src="https://i.ytimg.com/vi/hQ8GYk9gkcE/maxresdefault.jpg" alt="image_2" height="100%" width="100%">
+                    </label>
+                    <label for="s3" id="slide3">
+                        <img src="https://www.noticebard.com/wp-content/uploads/2020/10/hackCBS-scaled.jpg" alt="image_3" height="100%" width="100%">
+                    </label>
+                    <label for="s4" id="slide4">
+                        <img src="https://i.ytimg.com/vi/mIdr0akBPI0/maxresdefault.jpg" alt="image_4" height="100%" width="100%">
+                    </label>
+                    <label for="s5" id="slide5">
+                        <img src="https://i.ytimg.com/vi/S6IP_6HG2QE/maxresdefault.jpg" alt="image_5" height="100%" width="100%" >
+                    </label>
+        
+        
+                </section>
+        
+        
+                
+            </div>
+
+            <div class="latest-releases" id="latest-releases">
+                
+                
+                <h1 class="section-header">Latest Released Podcast</h1>
+
+                <section class="latest-released-card-wrapper">
+                    <div class="latest-released-card">
+
+                        <div class="recent-data">
+                            <a href="#music-player">
+                            <div class="latest-song-picture" id="latest-release-1">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            </a>
+
+                            <div class="relased-song-data">
+                                <div class="song-name-duration">
+                                <h3>Interview Aaron Upright</h3>
+                                <p class="duration">30:34</p>
+                                </div>
+                                <h4><a href="https://www.udemy.com/course/beginning-c-plus-plus-programming/">Developer Tea</a></h4>
+                                <p>July 28th , 2020</p>
+                            </div>
+                        </div>
+
+
+                        <div class="drop-down-container">
+
+
+                            <input type="checkbox" name="3-dots1" id="3-dots1" class="check-drop-down">
+                            <label for="3-dots1" class="dots-button"><div class="dots"></div></label>
+                            <!-- <label for="3-dots1" class="3dots-button"><div class="dots"></div></label> -->
+                            <div class="drop-down-menu" id="drop-down-menu">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-play"></i><a href="#">Play</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-bars"></i><a href="#">Add To Queue</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-forward"></i><a href="#">Play Next</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-layer-group"></i><a href="#">Add To Playlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                   
+                    <div class="latest-released-card">
+
+                            
+                        <div class="recent-data">
+                            <a href="#music-player">
+                            <div class="latest-song-picture" id="latest-release-1">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            </a>
+
+                            <div class="relased-song-data">
+                                <div class="song-name-duration">
+                                <h3>Interview Aaron Upright (Part 2)</h3>
+                                <p class="duration">30:34</p>
+                                </div>
+                                <h4><a href="https://www.udemy.com/course/beginning-c-plus-plus-programming/">Developer Tea</a></h4>
+                                <p>July 28th , 2020</p>
+                            </div>
+                            </div>
+
+                        <div class="drop-down-container">
+
+
+                            <input type="checkbox" name="3-dots2" id="3-dots2" class="check-drop-down">
+                            <label for="3-dots2" class="dots-button"><div class="dots"></div></label>
+                            <!-- <label for="3-dots1" class="3dots-button"><div class="dots"></div></label> -->
+                            <div class="drop-down-menu" id="drop-down-menu">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-play"></i><a href="#">Play</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-bars"></i><a href="#">Add To Queue</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-forward"></i><a href="#">Play Next</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-layer-group"></i><a href="#">Add To Playlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="latest-released-card">
+
+                        <div class="recent-data">
+                            <a href="#music-player">
+                            <div class="latest-song-picture" id="latest-release-3">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            </a>
+
+                            <div class="relased-song-data">
+                                
+                                    <div class="song-name-duration">
+                                        <h3>Imposter Syndrom </h3>
+                                        <p class="duration">30:16</p>
+                                    </div>
+                                
+                                <h4><a href="https://soundcloud.com/dr3jah">Front End Happy Hour</a></h4>
+                                <p>November 4 , 2020</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="drop-down-container">
+
+
+                            <input type="checkbox" name="3-dots3" id="3-dots3" class="check-drop-down">
+                            <label for="3-dots3" class="dots-button"><div class="dots"></div></label>
+                            <!-- <label for="3-dots1" class="3dots-button"><div class="dots"></div></label> -->
+                            <div class="drop-down-menu" id="drop-down-menu">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-play"></i><a href="#">Play</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-bars"></i><a href="#">Add To Queue</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-forward"></i><a href="#">Play Next</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-layer-group"></i><a href="#">Add To Playlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="latest-released-card">
+
+                        <div class="recent-data">
+                            <a href="#music-player">
+                            <div class="latest-song-picture" id="latest-release-4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            </a>
+
+                            <div class="relased-song-data">
+                                <div class="song-name-duration">
+                                    <h3>Git Fundamentals</h3>
+                                    <p class="duration">2:05</p>
+                                </div>
+                               
+                                <h4><a href="https://syntax.fm/">Syntax.FM</a></h4>
+                                <p>Septmeber 23rd ,2020</p>
+                            </div>
+                        </div>
+
+
+                        <div class="drop-down-container">
+
+
+                            <input type="checkbox" name="3-dots4" id="3-dots4" class="check-drop-down">
+                            <label for="3-dots4" class="dots-button"><div class="dots"></div></label>
+                            <!-- <label for="3-dots1" class="3dots-button"><div class="dots"></div></label> -->
+                            <div class="drop-down-menu" id="drop-down-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-play"></i>Play</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fas fa-bars"></i>Add To Queue</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-forward"></i>Play Next</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-layer-group"></i>Add To Playlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+
+            <div class="popular-artist" id="popular-artist">
+
+                <h1 class="section-header">Top Instructors</h1>
+                <div class="row-flex-container">
+
+                    <div class="popular-artist-content" id="popular-artist-1">
+                        <a href="https://www.udemy.com/user/timbuchalka/?ranMID=39197&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-M3TnXT3pLTY.pBebVc3MtA&LSNPUBID=je6NUbpObpQ&utm_source=aff-campaign&utm_medium=udemyads">
+                            <div class="popular-artist-img round" id="popular-artist-1-img">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </a>
+                        <a href="artist.html">
+                            <p>
+                               Tim Bulchka
+                            </p>
+                        </a>
+
+                    </div>
+                    <div class="popular-artist-content"  id="popular-artist-2">
+
+                        <a href="https://www.udemy.com/user/bradhussey/?ranMID=39197&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-Nl9jJbY.1Zhn.GTkBA37lQ&LSNPUBID=je6NUbpObpQ&utm_source=aff-campaign&utm_medium=udemyads">
+                            <div class="popular-artist-img round" id="popular-artist-2-img">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <p>
+                                Brad  Hussy
+                            </p>
+                        </a>
+
+                    </div>
+                    <div class="popular-artist-content"  id="popular-artist-3">
+
+                        <a href="https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/">
+                            <div class="popular-artist-img round" id="popular-artist-3-img">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </a> 
+                        <a href="">
+                            <p>
+                            Dr. Angela Yu
+                            </p>
+                        </a>
+
+                    </div>
+                    <div class="popular-artist-content"  id="popular-artist-4">
+                        <a href="https://www.youtube.com/tanaypratap">
+                            <div class="popular-artist-img round" id="popular-artist-4-img">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <p>
+                                Tanay Pratap
+                            </p>
+                        </a>
+
+                    </div>
+                    <div class="popular-artist-content"  id="popular-artist-5">
+                       <a href="https://www.youtube.com/channel/UCrqAGUPPMOdo0jfQ6grikZw">
+                            <div class="popular-artist-img round" id="popular-artist-5-img">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                             <p>
+                                Colt Steel
+                            </p>
+                        </a>
+
+                    </div>
+                    <div class="popular-artist-content"  id="popular-artist-6">
+                        <a href="">
+                            <div class="popular-artist-img round" id="popular-artist-6-img">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <p>
+                            Akshay Saini
+                            </p>
+                        </a>
+
+
+                    </div>
+                  
+
+
+                </div>
+
+            </div>
+
+            <div class="music-stations">
+
+                <div class="station-logo">
+
+                    <div id="stations-logo-1">
+
+                    </div>
+
+                    <div id="stations-logo-2" >
+
+                    </div>
+
+                    <div id="stations-logo-3">
+                        <div class="logo-wrapper">
+                          
+                            <div class="music-icon" id="icon2-music-icon">
+                                
+                            </div>
+                        </div>
+                       
+                        <p class="station-label">
+                            Platforms
+                        </p>
+                    </div>
+
+                    <div id="stations-logo-4">
+
+                    </div>
+
+                    <div id="stations-logo-5">
+
+                    </div>
+                </div>
+
+                <div class ="station-list row-flex-container ">
+
+                    <a href="#" target="_blank">
+                        <div class ="music-station-content round" id="music-station-1">
+
+                        <!-- <p>GFS</p> -->
+
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <div class ="music-station-content round" id="music-station-2">
+
+                            <!-- <p style="z-index: 2;">Tutorial Point</p> -->
+                        
+
+                        </div>
+                     </a>
+                     
+                    <a href="">
+                        <div class ="music-station-content round" id="music-station-3">
+
+                            <!-- <p>Youtube</p> -->
+
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class ="music-station-content round" id="music-station-4">
+
+                        
+
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/">
+                        <div class ="music-station-content round" id="music-station-5">
+
+                         
+
+                        </div>
+                        </a>
+                    <a href="https://www.codechef.com/">  
+                        <div class ="music-station-content round" id="music-station-6">
+
+                        
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+           
+
+            <div class="latest" id="latest-english">
+                    <h1 class="section-header">
+                        Latest Tech
+                    </h1>
+
+                    <div class=" latest-realsed-carosel row-flex-container">
+                        <div class="latest-released-english" id="latest-eng-1-wrapper">
+                            <div class="latest-released-image" id="latest-english-1">
+
+                            </div>
+
+                            <div class="latest-realsed-content">
+                                <p class="song-name">REACT</p>
+                               
+                            </div>
+
+                        </div>
+
+                        <div  class="latest-released-english" id="latest-eng-2-wrapper" >
+                            <div class="latest-released-image" id="latest-english-2">
+
+                            </div>
+
+                            <div class="latest-realsed-content">
+                                <p class="song-name">ANGULAR</p>
+                               
+                            </div>
+                        </div  >
+
+                        <div  class="latest-released-english" id="latest-eng-3-wrapper">
+                            <div class="latest-released-image" id="latest-english-3">
+
+                            </div>
+
+                            <div class="latest-realsed-content">
+                                <p class="song-name">FLUTTER</p>
+                              
+                            </div>
+                        </div >
+
+
+                        <div  class="latest-released-english" id="latest-eng-4-wrapper">
+                            <div class="latest-released-image" id="latest-english-4">
+
+                            </div>
+
+                            <div class="latest-realsed-content">
+                                <p class="song-name">KOTLIN</p>
+                               
+                            </div>
+                        </div>
+
+
+                        <div  class="latest-released-english" id="latest-eng-5-wrapper">
+
+                            <div class="latest-released-image" id="latest-english-5">
+
+                            </div>
+
+                            <div class="latest-realsed-content">
+                                <p class="song-name">UNREAL 4</p>
+                              
+                            </div>
+
+                        </div>
+                        <div  class="latest-released-english" id="latest-eng-6-wrapper">
+
+                            <div class="latest-released-image" id="latest-english-6">
+
+                            </div>
+
+                            <div class="latest-realsed-content">
+                                <p class="song-name">SWIFT</p>
+                              
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+         
+        </section>
+
+        <section id="aside-queue-section" class="aside-queue-section">
+           
+            <section class="aside-section-header">
+                <h1 class="aside-header">
+                TOP CODERS
+                </h1>
+
+                <div class="drop-down-container-2">
+
+
+                    <input type="checkbox" name="q-drop-down" id="q-drop-down" class="check-drop-down">
+                    <label for="q-drop-down" class="drop-down-2-label"> MORE <i class="fas fa-chevron-down"></i></label>
+                    <!-- <label for="3-dots1" class="3dots-button"><div class="dots"></div></label> -->
+                    <div class="drop-down-menu-2" id="drop-down-menu-2">
+                        <ul>
+                            <li>
+                                <a href="https://www.codechef.com/"><i class="fas fa-laptop-code"></i>Current Contest</a>
+                            </li>
+                            <li>
+                                <div style="height: 0 ; border: 0.2px  solid;"></div>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fas fa-bars"></i>Ratings</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="music-queue" id="music-queue">
+
+                <ol class="song-list" >
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/god.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    Samad Khan
+                                </h4>
+                                <p class="song-queue-artist">
+                                    NSUT
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/coldplay-ghost-stories.jpg" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    Harshil 
+                                </h4>
+                                <p class="song-queue-artist">
+                                    NSUT
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://i.ytimg.com/vi/K3Qzzggn--s/maxresdefault.jpg" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    Abubakar
+                                </h4>
+                                <p class="song-queue-artist">
+                                    NSUT
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://i.redd.it/m27tc9lk6st41.jpg" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                   Dhruv
+                                </h4>
+                                <p class="song-queue-artist">
+                                    DTU
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Joji_-_Yeah_Right.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                   Anish
+                                </h4>
+                                <p class="song-queue-artist">
+                                   IITD
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/song-c-coldplay.jfif" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    Rahul
+                                </h4>
+                                <p class="song-queue-artist">
+                                    IITB
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/song-c-coldplay.jfif" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    KARTIK
+                                </h4>
+                                <p class="song-queue-artist">
+                                    IIIT - H
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/song-c-coldplay.jfif" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    AMIR KHAN
+                                </h4>
+                                <p class="song-queue-artist">
+                                    JAMIA
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/song-c-coldplay.jfif" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    SID
+                                </h4>
+                                <p class="song-queue-artist">
+                                    MIT
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li >
+                        <div class="song-card-queue">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/god.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    Samad Khan
+                                </h4>
+                                <p class="song-queue-artist">
+                                    NSUT
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue">
+                            <div class="song-cover-pic-queue">
+                                <img src="trash_media/god.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                    Samad Khan
+                                </h4>
+                                <p class="song-queue-artist">
+                                    NSUT
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Joji_-_Yeah_Right.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                   Anish
+                                </h4>
+                                <p class="song-queue-artist">
+                                   IITD
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Joji_-_Yeah_Right.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                   Anish
+                                </h4>
+                                <p class="song-queue-artist">
+                                   IITD
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Joji_-_Yeah_Right.png" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                   Anish
+                                </h4>
+                                <p class="song-queue-artist">
+                                   IITD
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="song-card-queue first-nine">
+                            <div class="song-cover-pic-queue">
+                                <img src="https://i.redd.it/m27tc9lk6st41.jpg" alt="cover">
+                            </div>
+
+                            <div class="song-details-queue">
+                                <h4 class="song-queue-title">
+                                   Dhruv
+                                </h4>
+                                <p class="song-queue-artist">
+                                    DTU
+                                </p>
+
+                            </div>
+                            <div class="like-wrapper">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </li>
+        
+                    
+
+                 
+                </ol>
+
+            </section>
+
+        </section>
+
+        </main>
+
+     
+
+    </body>
+
+
+</html>
